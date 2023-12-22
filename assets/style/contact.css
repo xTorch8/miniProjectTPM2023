@@ -1,0 +1,127 @@
+.main__contact__title {
+    font-size: 3rem;
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: underline;
+    text-decoration-color: #F8FAAD;
+}
+
+.main__contact__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.main__contact__container__left {
+    width: 60%;
+    padding: 1rem;
+} 
+
+.main__contact__container__right {
+    width: 40%;
+}
+
+.main__contact__form {
+    background: #F8FAAD;
+    padding: 1.5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+}
+
+.main__contact__form__name {
+    display: grid;
+    grid-template-columns: auto auto;  
+    gap: 2rem;
+}
+
+.main__contact__form__label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.main__contact__form__input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 0.375rem;
+    margin-bottom: 0;
+    display: block;
+}
+
+.main__contact__form__textarea {
+    width: 100%;
+    border-radius: 16px;  
+    padding: 0.375rem; 
+    height: 64px;
+    resize: none;
+}
+
+.main__contact__form__button {
+    background: #242424;
+    color: #F8FAAD;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 8px;
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__contact__image {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main__contact__image:hover {
+    animation: shakingMessage 1s linear;
+}
+
+.main__contact__form__error {
+    color: red;
+    font-weight: bold;
+}
+
+@keyframes shakingMessage {
+    0% {
+        transform: skewY(0);
+    }
+    25% {
+        transform: skewY(20deg);
+    }
+    100% {
+        transform: skewY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main__contact__title {
+        font-size: 2rem;
+    }
+
+    .main__contact__container {
+        flex-direction: column;
+    }
+
+    .main__contact__container__left {
+        width: 100%;
+    }
+
+    .main__contact__container__right {
+        display: none;
+    }
+
+    .main__contact__form {
+        width: 80%;
+    }
+}

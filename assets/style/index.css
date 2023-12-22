@@ -1,0 +1,30 @@
+html {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, #242424 100%, #1D1D1D 100%);
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+h1, h2, h3, p, a, input {
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F8FAAD;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
